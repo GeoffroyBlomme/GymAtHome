@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  background-color: #202833;
+  width: 100%;
+}
+.main-header .main-header__nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-header .main-header__nav a {
+  text-decoration: none;
+  color: #C5C6C8;
+}
+.main-header .main-header__nav__logo {
+  margin: 0 auto 0 5%;
+  font-size: 2.5rem;
+  font-family: "Source Code Pro", monospace;
+}
+.main-header .main-header__nav__logo span {
+  color: #66FCF1;
+}
+.main-header .main-header__nav__hamburger-menu {
+  height: 3rem;
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+.main-header .main-header__nav__hamburger-menu img {
+  height: 2rem;
+}
+.main-header .main-header__nav__list {
+  margin: 0 10% 0 auto;
+  list-style: none;
+  display: none;
+}
+.main-header .main-header__nav__list li {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+.main-header .main-header__nav__list a:hover {
+  color: #a5a5a5;
+}
+.main-header .img-container {
+  background: url(../images/woman-watching-sports-training-online-on-laptop-royalty-free-image-1584717965.jpg) center no-repeat;
+  height: 300px;
+  padding: 100px 0px;
+  background-size: cover;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+.main-header .img-container p {
+  text-align: center;
+  padding: 50px 50px 0 50px;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  align-items: center;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(66, 65, 65, 0.5);
+}
+.modal .modal__list {
+  margin-bottom: 25%;
+  width: 100%;
+  background-color: #202833;
+}
+.modal .modal__list li {
+  border: 2px solid #888a8d;
+  border-bottom: none;
+  height: 5rem;
+}
+.modal .modal__list li a {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 30px;
+  align-items: center;
+  text-decoration: none;
+  color: #C5C6C8;
+  font-size: 1.5rem;
+}
+.modal .modal__list li a::after {
+  content: url("../images/arrow-right.svg");
+  width: 1rem;
+}
+.modal .modal__list li:last-of-type {
+  border-bottom: 2px solid #888a8d;
+}
+
+@media (min-width: 40rem) {
+  .main-header .main-header__nav .main-header__nav__logo {
+    margin: 0 auto 0 5%;
+  }
+  .main-header .main-header__nav .main-header__nav__list {
+    margin: 0 10% 0 auto;
+    list-style: none;
+    display: flex;
+  }
+  .main-header .main-header__nav .main-header__nav__list li {
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+  .main-header .main-header__nav .main-header__nav__list a:hover {
+    color: #a5a5a5;
+  }
+  .main-header .main-header__nav .main-header__nav__hamburger-menu {
+    display: none;
+  }
+  .main-header .img-container {
+    height: 450px;
+  }
+  .main-header .img-container p {
+    font-size: 4rem;
+    text-align: center;
+    padding: 75px 75px 0 75px;
+  }
+}
+
+/*# sourceMappingURL=shared.css.map */
