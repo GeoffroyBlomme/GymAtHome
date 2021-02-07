@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/328b0153cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/shared.css">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <title>Gym At Home</title>
 </head>
 <body>
@@ -21,25 +30,148 @@
             <img src="/images/iconfinder_menu-alt_134216.png" alt="">
         </div>
         <ul class="main-header__nav__list">
-            <li><a href=""> test</a></li>
-            <li> <a href=""> test2</a></li>
+            <li><a href="">Home</a></li>
+            <li> <a href="">Salles</a></li>
+            <li><a href="">Coachs</a></li>
         </ul>
     </nav>
     <div class="img-container"><p>Dépassez-vous, à la maison ! </p></div>
     </header>
 
+    <main>
+        <section class="why-join">
+            <div class="container">
+                <h2 class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    Pourquoi nous rejoindre ? 
+                </h2>
+                <p id="for-border" class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s"></p>
+                <p class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    Nous amenons la salle de sport directement chez vous !
+                </p>
+                <div class="flex-container">
+                <div class="why-join__elt wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <i class="fas fa-dumbbell fa-3x"></i>
+                    <h3 class="why-join__elt__title">
+                        Numéros 1 du Visio-training
+                    </h3>
+                    <div class="why-join__elt__desc">
+                        Un savoir-faire du visio-training que vous ne retrouvez nul part-ailleurs.
+
+                    </div>
+                </div>
+                <div class="why-join__elt wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <i class="fas fa-euro-sign fa-3x"></i>
+                    <h3 class="why-join__elt__title">
+                        Nous avons les meilleurs prix du marchés
+                    </h3>
+                    <div class="why-join__elt__desc">
+                        Pas besoin de chercher ailleurs pour des prix plus bas, vous ne trouverez pas !
+                    </div>
+                </div>
+                <div class="why-join__elt wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <i class="fas fa-clipboard-list fa-3x"></i>
+                    <h3 class="why-join__elt__title">
+                        Des programmes personnalisés
+                    </h3>
+                    <div class="why-join__elt__desc">
+                        Un rendez-vous offert avec un coach diplomé dès l'inscription pour créer un programme qui répond à vos buts.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="pricing">
+            <div class="container">
+            <h2 class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                Les abonnements
+            </h2>
+            <p id="for-border" class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s"></p>
+            
+            <div class="flex-container">
+                <div class="pricing__elt  wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <h4 class="pricing__elt__title">
+                        Basique
+                    </h4>
+                    <p>
+                        <strong>10€</strong>/mois
+                    </p>
+
+                    <p>
+                        <i class="fas fa-check"></i>
+                        Accès à toutes nos salles en Europe
+                    </p>
+                    <div class="pricing__elt__signUp">
+                        <a href="">Choisir cette abonnement</a>
+                    </div>
+                </div>
+                <div id ="prenium" class=" pricing__elt   wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <h4 class="pricing__elt__title">
+                        
+                        Recommandé
+                    </h4>
+                    <p>
+                        <strong>15€</strong>/mois
+                    </p>
+                    <p>
+                        <i class="fas fa-check"></i>
+                        Accès à toutes nos salles en Europe
+                    </p>
+                    <p>
+                        <i class="fas fa-check"></i>
+                        <strong>1</strong> rendez-vous/mois offert avec votre coach préféré
+                    </p>
+                    <div class="pricing__elt__signUp">
+                        <a href="">Choisir cette abonnement</a>
+                    </div>
+                </div>
+                <div class="pricing__elt  wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    
+                    <h4 class="pricing__elt__title"> 
+                       Pro 
+                    </h4>
+                    <p>
+                        <strong>25€</strong>/mois
+                    </p>
+                    <p>
+                        <i class="fas fa-check"></i>
+                        Accès à toutes nos salles en Europe
+                    </p>
+                    <p>
+                        <i class="fas fa-check"></i>
+                        <strong>2</strong> rendez-vous/mois offert avec votre coach préféré
+                    </p>
+                    <p>
+                        <i class="fas fa-check"></i>
+                        Partagez vôtre carte avec <strong>1</strong> personnes résidants à la même adresse que vous.
+                    </p>
+                    <div class="pricing__elt__signUp">
+                    <a href="">Choisir cette abonnement</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
     <div class="modal">
         <ul class="modal__list">
             <li class="modal__list__elt">
-                <a href="">Choix 1</a>
+                <a href="">Home<i class="fas fa-arrow-right"></i></a>
+                
             </li>
             <li class="modal__list__elt">
-                <a href="">Choix 2</a>
+                <a href="">Salles<i class="fas fa-arrow-right"></i></a>
+                
+            </li>
+            <li class="modal__list__elt">
+                <a href="">Coachs<i class="fas fa-arrow-right"></i></a>
+                
             </li>
             
         </ul>
     </div>
 </body>
 
-<script src="./js/main.js"></script>
+
 </html>
