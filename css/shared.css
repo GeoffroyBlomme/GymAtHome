@@ -17,8 +17,10 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  padding: 0.5rem 0;
   z-index: 5;
-  height: 4rem;
+  flex-wrap: wrap;
+  /* height: $height_nav; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,12 +51,26 @@ body {
   list-style: none;
   display: none;
 }
-.main-header .main-header__nav__list li {
-  font-size: 2rem;
-  padding: 0 2rem;
-}
 .main-header .main-header__nav__list a:hover {
   color: #a5a5a5;
+}
+.main-header .main-header__nav__list .main-header__nav__list__cta {
+  background-color: white;
+  border: 1px #66FCF1 solid;
+  border-radius: 15px;
+}
+.main-header .main-header__nav__list .main-header__nav__list__cta a {
+  color: #66FCF1;
+}
+.main-header .main-header__nav__list .main-header__nav__list__cta:hover {
+  background-color: #66FCF1;
+  border-color: white;
+}
+.main-header .main-header__nav__list .main-header__nav__list__cta:hover a {
+  color: white;
+}
+.main-header .main-header__nav__list .main-header__nav__list__cta:hover #sign-up__anchor:hover {
+  color: white;
 }
 .main-header .img-container {
   background: url(../images/woman-watching-sports-training-online-on-laptop-royalty-free-image-1584717965.jpg) center no-repeat;
@@ -108,10 +124,14 @@ main .pricing .container {
   width: 80%;
   margin: auto;
 }
+main .pricing .container .section-title {
+  padding-top: 2rem;
+}
 main .pricing .container .flex-container {
   margin: 2rem 0;
 }
 main .pricing .container .flex-container .pricing__elt {
+  transition: 0.3s ease-in-out;
   margin: 1rem;
   position: relative;
   padding-bottom: 4rem;
@@ -147,6 +167,9 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
 }
 main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hover a {
   color: white;
+}
+main .pricing .container .flex-container .pricing__elt:hover {
+  transform: scale(1.05);
 }
 
 .modal {
@@ -198,7 +221,8 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
   }
   .main-header .main-header__nav .main-header__nav__list li {
     font-size: 2rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    padding: 0.3rem 0.75rem;
   }
   .main-header .main-header__nav .main-header__nav__list a:hover {
     color: #a5a5a5;
