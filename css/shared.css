@@ -130,11 +130,14 @@ body {
   border-bottom: solid 1px #6b6b6b;
   font-weight: bold;
   font-size: 1.2rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
 }
 .main-footer .main-footer__container .main-footer__container__about__desc {
   margin: auto;
   width: 75%;
+}
+.main-footer .main-footer__container .back-to-top:hover {
+  cursor: pointer;
 }
 
 .modal {
