@@ -160,9 +160,6 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
 main .pricing .container .flex-container .pricing__elt:hover {
   transform: scale(1.05);
 }
-main .pricing .container .flex-container #prenium {
-  margin-top: 0;
-}
 main .pricing .container .flex-container #prenium h4 {
   background-color: #66FCF1;
 }
@@ -245,9 +242,12 @@ main .pricing .container .flex-container #prenium h4 {
     padding: 150px 150px 0 150px;
   }
 
+  main .pricing .container .flex-container #prenium {
+    margin-top: 0;
+  }
   main .container .flex-container {
-    align-items: stretch;
     display: flex;
+    justify-content: center;
   }
   main .container .flex-container .pricing__elt {
     flex-basis: 100%;

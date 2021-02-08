@@ -185,7 +185,6 @@ main{
                 }
 
                 #prenium{
-                    margin-top: 0;
                     h4{
                         background-color: map-get($colors,light-green);
                     }
@@ -290,10 +289,20 @@ main{
     
 }
 main{
+    .pricing{
+        .container{
+            .flex-container{
+                #prenium{
+                    margin-top: 0;
+                }
+            }
+        }
+        
+    }
     .container{
         .flex-container{
-            align-items: stretch;
             display: flex;
+            justify-content: center;
             .pricing__elt{
                 flex-basis: 100%;
                 
@@ -302,6 +311,7 @@ main{
                 display: inline-block;
                 width: 30%;
             }
+            
         }
     }
 }
