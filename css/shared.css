@@ -17,8 +17,9 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  padding: 0.5rem 0;
   z-index: 5;
-  height: 4rem;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,34 +72,45 @@ body {
   padding: 50px 50px 0 50px;
 }
 
+main {
+  overflow: hidden;
+}
 main section {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-main #for-border {
+main section .container h2 {
+  margin: 2rem 0 1rem 0;
+  font-family: "Lexend Mega", sans-serif;
+}
+main section .container #for-border {
   margin-left: 25%;
   width: 50%;
   border-bottom: 1px #6b6b6b solid;
 }
-main h2 {
-  margin: 2rem 0 1rem 0;
-  font-family: "Lexend Mega", sans-serif;
-}
-main p {
+main section .container p {
   margin-top: 1rem;
   font-size: 1.2rem;
 }
-main .why-join .container .why-join__elt {
+main section .container .flex-container {
+  display: flex;
+  justify-content: center;
+}
+main section .container .flex-container .why-join__elt {
   margin: 2rem 0;
 }
-main .why-join .container .why-join__elt i {
+main section .container .flex-container .why-join__elt i {
   color: #66FCF1;
 }
-main .why-join .container .why-join__elt .why-join__elt__title {
+main section .container .flex-container .why-join__elt .why-join__elt__title {
   margin: 0.5rem;
   font-family: "Lexend Mega", sans-serif;
   font-size: 1.5rem;
+}
+main section .container .flex-container .why-join__elt .why-join__elt__desc {
+  text-align: center;
+  padding: 0 10% 0 10%;
 }
 main .pricing {
   width: 100%;
@@ -108,10 +120,14 @@ main .pricing .container {
   width: 80%;
   margin: auto;
 }
+main .pricing .container .section-title {
+  padding-top: 2rem;
+}
 main .pricing .container .flex-container {
   margin: 2rem 0;
 }
 main .pricing .container .flex-container .pricing__elt {
+  transition: 0.3s ease-in-out;
   margin: 1rem;
   position: relative;
   padding-bottom: 4rem;
@@ -148,6 +164,15 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
 main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hover a {
   color: white;
 }
+main .pricing .container .flex-container .pricing__elt:hover {
+  transform: scale(1.05);
+}
+main .pricing .container .flex-container #prenium {
+  margin-top: 0;
+}
+main .pricing .container .flex-container #prenium h4 {
+  background-color: #66FCF1;
+}
 
 .modal {
   position: fixed;
@@ -155,8 +180,8 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
   top: 0;
   align-items: center;
   z-index: 100;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(66, 65, 65, 0.5);
 }
 .modal .modal__list {
@@ -179,10 +204,6 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
   color: #C5C6C8;
   font-size: 1.5rem;
 }
-.modal .modal__list li i {
-  height: 1rem;
-  color: #66FCF1;
-}
 .modal .modal__list li:last-of-type {
   border-bottom: 2px solid #888a8d;
 }
@@ -195,13 +216,29 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
     margin: 0 10% 0 auto;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
   }
   .main-header .main-header__nav .main-header__nav__list li {
     font-size: 2rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    padding: 0.3rem 0.75rem;
   }
   .main-header .main-header__nav .main-header__nav__list a:hover {
     color: #a5a5a5;
+  }
+  .main-header .main-header__nav .main-header__nav__list__cta {
+    background-color: white;
+    border: 1px #66FCF1 solid;
+    border-radius: 15px;
+  }
+  .main-header .main-header__nav .main-header__nav__list__cta a {
+    color: #66FCF1;
+  }
+  .main-header .main-header__nav .main-header__nav__list__cta:hover {
+    background-color: #66FCF1;
+  }
+  .main-header .main-header__nav .main-header__nav__list__cta:hover #sign-up__anchor {
+    color: white;
   }
   .main-header .main-header__nav .main-header__nav__hamburger-menu {
     display: none;
@@ -216,29 +253,15 @@ main .pricing .container .flex-container .pricing__elt .pricing__elt__signUp:hov
   }
 
   main .container .flex-container {
+    align-items: stretch;
     display: flex;
-    justify-content: center;
+  }
+  main .container .flex-container .pricing__elt {
+    flex-basis: 100%;
   }
   main .container .flex-container .why-join__elt {
     display: inline-block;
     width: 30%;
-  }
-  main .container .flex-container .why-join__elt .why-join__elt__desc {
-    text-align: center;
-    padding: 0 10% 0 10%;
-  }
-  main .pricing .container .flex-container {
-    align-items: stretch;
-    display: flex;
-  }
-  main .pricing .container .flex-container .pricing__elt {
-    flex-basis: 100%;
-  }
-  main .pricing .container .flex-container #prenium {
-    margin-top: 0;
-  }
-  main .pricing .container .flex-container #prenium h4 {
-    background-color: #66FCF1;
   }
 }
 
