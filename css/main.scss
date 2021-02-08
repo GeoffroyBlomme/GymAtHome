@@ -1,0 +1,181 @@
+$colors:(light-green:#66FCF1, background-dark:#202833, light-grey:#C5C6C8);
+
+
+
+
+main{
+    .cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get($colors,background-dark);
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: white;
+
+        p{
+            padding: 1rem 0;
+        }
+
+        a{
+            margin: 0 3rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            display: flex;
+            text-decoration: none;
+            background-color: map-get($colors,light-green);
+            border-radius: 2px;
+            transition: margin-bottom 0.5s;
+        }
+
+        a:hover{
+            margin-bottom: 0.5rem;
+        }
+    }
+    section{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        .container{
+            h2{
+                margin: 2rem 0 1rem 0;
+                font-family: "Lexend Mega", sans-serif;
+            }
+            #for-border{
+                margin-left: 25%;
+                width: 50%;
+                border-bottom: 1px #6b6b6b solid;
+            }
+
+            p{
+                margin-top: 1rem;
+                font-size: 1.2rem;
+            }
+            .flex-container{          
+                
+                .why-join__elt{
+                    margin: 2rem 0;
+                    i{
+                        color:map-get($colors,light-green);
+                    }
+                    .why-join__elt__title{
+                        margin: 0.5rem;
+                        font-family: "Lexend Mega", sans-serif;
+                        font-size: 1.5rem;
+                    }
+                    .why-join__elt__desc{
+                        text-align: center;
+                        padding: 0 10% 0 10%;
+                    }
+                }
+            }
+        }
+        
+    }
+    .pricing{
+        width: 100%;
+        background-color: #C5C6C8;
+        .container{
+            width: 80%;
+            margin: auto;
+            .section-title{
+                padding-top: 2rem;
+            }
+            .flex-container{
+                padding: 2rem 0 1rem 0;
+                .pricing__elt{
+                    transition: 0.3s ease-in-out;
+                    margin: 1rem ;
+                    position: relative;
+                    padding-bottom: 4rem;
+                    background-color: white;
+                    i{
+                        color: map-get($colors,light-green);
+                    }
+                    h4{
+                        background-color: #202833;
+                        color: white;
+                        padding: 1rem;
+                        font-family: "Lexend Mega", sans-serif;
+                    }
+
+                    .pricing__elt__signUp{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        border: 1px solid #66FCF1;
+                        border-radius: 10px;
+                        margin: 1rem;
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            color: #66FCF1;
+                        }
+                        
+                    }
+                    .pricing__elt__signUp:hover{
+                        background-color: map-get($colors,light-green);
+                        a{
+                            color:white;
+                        }
+                    }
+                }
+                .pricing__elt:hover{
+                    transform: scale(1.05);
+                }
+
+                #prenium{
+                    h4{
+                        background-color: map-get($colors,light-green);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:40rem){
+    
+
+
+main{
+    .cta{
+        flex-direction: row;
+    }
+    .pricing{
+        .container{
+            .flex-container{
+                #prenium{
+                    margin-top: 0;
+                }
+            }
+        }
+        
+    }
+    .container{
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            .pricing__elt{
+                flex-basis: 100%;
+                
+            }
+            .why-join__elt{
+                display: inline-block;
+                width: 30%;
+            }
+            
+        }
+    }
+}
+
+
+}
