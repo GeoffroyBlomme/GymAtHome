@@ -72,9 +72,6 @@ body {
   padding: 50px 50px 0 50px;
 }
 
-main {
-  overflow: hidden;
-}
 main section {
   width: 80%;
   margin: auto;
@@ -92,10 +89,6 @@ main section .container #for-border {
 main section .container p {
   margin-top: 1rem;
   font-size: 1.2rem;
-}
-main section .container .flex-container {
-  display: flex;
-  justify-content: center;
 }
 main section .container .flex-container .why-join__elt {
   margin: 2rem 0;
