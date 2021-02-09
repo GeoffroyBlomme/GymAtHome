@@ -4,7 +4,9 @@ $colors:(light-green:#66FCF1, background-dark:#202833, light-grey:#C5C6C8);
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Roboto Condensed", sans-serif;
 }
@@ -156,9 +158,14 @@ body{
             width: 75%;
         }
 
-        .back-to-top:hover{
-            cursor: pointer;
-        }
+        .back-to-top{
+            
+            i{
+                color: white;
+            }
+             
+         }
+        
     }
 }
 
