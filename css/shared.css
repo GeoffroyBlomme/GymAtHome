@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -136,8 +140,8 @@ body {
   margin: auto;
   width: 75%;
 }
-.main-footer .main-footer__container .back-to-top:hover {
-  cursor: pointer;
+.main-footer .main-footer__container .back-to-top i {
+  color: white;
 }
 
 .modal {
